@@ -1,6 +1,5 @@
-body {
-font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+
+
 
 .wrap-a{
     text-decoration: none;
@@ -13,15 +12,23 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .sections{
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 
 .section-card{
     width: 1170px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.header{
+    width: 100%;
 }
 
 .card-categories{
@@ -109,6 +116,11 @@ h2{
 .card-category-3:hover,
 .card-category-4:hover{
     background-color: rgba(0,52,79, 0.5);
+}
+
+.card-img{
+    width: 292px;
+    height: 200px;
 }
 
 .about-advantage,
@@ -268,3 +280,262 @@ h2{
     color: #1E90FF;
 }
 
+.map {
+    width: 580px;
+    height: 580px;
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+
+.sections,
+.section-card {
+width: 1024px;
+}
+
+.card-img{
+width: 256px;
+height: 180px;
+}
+
+.phones{
+margin-right: 10px;
+}
+
+.advantages-desc{
+margin-bottom: 60px;
+}
+
+.map {
+width: 512px;
+height: 512px;
+}
+.advantage-list-1,
+.advantage-list-2{
+width: 80%;
+}
+
+h3 {
+font-size: 1em;
+}
+
+.advantage .fas,
+.advantage .far {
+font-size: 1.5em;
+}
+
+.contact-wrapper {
+width: 65%;
+}
+}
+
+@media only screen and (max-device-width: 769px) {
+
+    .sections,
+    .section-card {
+        width: 768px;
+    }
+
+    .card-img{
+        width: 192px;
+        height: 170px;
+    }
+
+    .section-description {
+        padding: 0 40px;
+    }
+
+    h1,
+    .subtitle{
+        padding-left: 40px;
+    }
+
+    .card-description {
+        padding: 0 10px;
+    }
+
+    .scroll-advantage,
+    .scroll-contact,
+    .scroll-up {
+        margin-left: 40px;
+        font-size: 1.1em;
+    }
+
+    .about-advantage,
+    .about-contacts,
+    .up {
+        height: 80px;
+    }
+
+    .phones{
+        margin-right: 10px;
+    }
+
+    .phone {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+
+    .advantages {
+        background-size: 400px 300px;
+    }
+
+    .advantages-desc{
+        padding: 30px 0 0 40px;
+        margin-bottom: 30px;
+    }
+
+    .map {
+        width: 384px;
+        height: 384px;
+    }
+    .advantage-list-1,
+    .advantage-list-2{
+        width: 90%;
+    }
+
+    .advantage{
+        margin-right: 40px;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+
+    .contact-desc h2 {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    .contacts h5 {
+        margin-top: 20px;
+    }
+
+    .advantage .fas,
+    .advantage .far {
+        font-size: 1.5em;
+    }
+
+    .contact-wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-device-width: 425px) {
+
+    .sections,
+    .section-card {
+        width: 425px;
+    }
+
+    .card-categories{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .card-category-1,
+    .card-category-2,
+    .card-category-3,
+    .card-category-4{
+        width: 100%;
+    }
+
+    .card-img{
+        width: 212px;
+        height: 170px;
+    }
+
+    .section-description {
+        padding: 0 30px;
+    }
+
+    h1,
+    .subtitle{
+        padding-left: 30px;
+    }
+
+    .card-description {
+        padding: 0 10px;
+    }
+
+    .scroll-advantage,
+    .scroll-contact,
+    .scroll-up {
+        margin-left: 30px;
+        font-size: 1.1em;
+    }
+
+    .about-advantage,
+    .about-contacts,
+    .up {
+        height: 80px;
+    }
+
+    .phones{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    .phone {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+
+    .advantages {
+        background-size: 250px 170px;
+    }
+
+    .advantages-desc{
+        width: 90%;
+        padding: 20px 0 0 30px;
+        margin-bottom: 30px;
+    }
+
+    .advantages-desc h2{
+        margin-bottom: 70px;
+    }
+
+    .map {
+        width: 425px;
+        height: 425px;
+
+    }
+    .advantage-list-1,
+    .advantage-list-2{
+        flex-direction: column;
+        width: 85%;
+        margin-bottom: 0;
+    }
+
+    .advantage{
+        width: 100%;
+        margin: 0px;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contact-desc h2 {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    .contacts h5 {
+        margin-top: 20px;
+    }
+
+    .advantage .fas,
+    .advantage .far {
+        font-size: 2em;
+    }
+
+    .contact-wrapper {
+        width: 85%;
+    }
+}
